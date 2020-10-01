@@ -1,0 +1,14 @@
+1. Discuss your experiences in writing these programs.  What was the hardest part for you?  Do you think the book is useful on graphs?
+
+I liked this PA, because it seemed to be realistic if you were working at a company. Instead of coming up with a code base from scratch, we got to clean up existing code and use an already functioning library. The hardest part for me was getting straight how the Graph relates to the PlaformMap, to the platform, to the node, etc. Once I understood the relationships it was fairly straightforward.
+
+2. Discuss the shortcoming of the shortest path solution of step 3 here. However, you might not have seen the three-trainline route expected here because of the existence of a same-length route that takes two trainlines, so your discussion may be hypothetical.
+
+My results only showed 2 train lines. From a hypothetical standpoint, the problem with the result of 3 lines is that the program does not take into account the time it takes to switch train lines - which actually takes much longer than simply travelling from one station to the next. In order to show the correct path, we need to assign weights to the edges so the cost of transferring lines in computed.
+
+3. Using our graph, find the cost of going from NorthQuincy to SavinHill, i.e. going in and out on different extensions of a split. Is this a proper cost based on what happens in real life? Discuss. Can you think of a way to set up the graph that would fix this modeling problem?
+
+
+4. Explain why the code in MetroGraph fills in the neighbor vertex numbers in the Node array instead of simply adding edges to a growing graph. These neighbor vertex numbers in the Node array are never used once the Graph is created
+
+The Node array is only used temporarily while setting up the Graph. It is used in reading the file and then discarded.
